@@ -1,3 +1,4 @@
+//Версия 0.2.0
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = ""; //введите ваш токен
