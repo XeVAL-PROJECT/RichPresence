@@ -8,15 +8,15 @@ RichPresence with Assets, timestamps, party, state, details...
 * Для установки в Windows и MacOS X заходим на сайт https://nodejs.org и скачиваем последню весию (последнюю не обязательно, но желательно. Также лучше новичкам устанавливать LTS версию)
 * Для установки в Linux нам надо добавить репозиторий.
 Для этого заходим в терминал и пишем:
-$ sudo apt-add-repository ppa:chris-lea/node.js
+> sudo apt-add-repository ppa:chris-lea/node.js
 Если не получилось, написал ошибку, тогда пишем вместо этой команды эту:
-$ sudo add-apt-repository ppa:chris-lea/node.js
+> sudo add-apt-repository ppa:chris-lea/node.js
 Далее пишем (все):
-$ sudo apt-get update
+> sudo apt-get update
 или
-$ sudo apt update
+> sudo apt update
 Теперь пишем команду:
-$ sudo apt-get install nodejs
+> sudo apt-get install nodejs
 Готово!
 ## Второй этап
 Второй этап установки уже ничем не отличается от установленной ОС, будь это Windows, MacOs X или Linux, кроме некоторых моментов.
@@ -27,12 +27,12 @@ $ sudo apt-get install nodejs
 В MacOS X скоро будет...
 2 вариант:
 В Linux е и Windows заходим в командную строку и пишем:
-$ cd ваша_директория/
+> cd ваша_директория/
 В MacOS X тоже пока неизвестно...
 
 Теперь пишем:
-$ npm i discord.js
+> npm i discord.js
 Готово!
 # Запуск
 В командной строке пишем:
-$ node .
+> node .
