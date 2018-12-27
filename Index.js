@@ -1,14 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let token = "" //вставьте токен сюда.
+const token = ""; //введите ваш токен
+
 client.on('ready', () => {
-    console.log("Успешный запуск RichPresence, ожидание установки статуса...");
-    client.user.setPresence({
-      status: 'online', //статус вашего аккаунта (dnd, idle, invisible, online)
-      game: {
+  console.log("Ожидание установки статуса...");
+client.user.setPresence({
+  status: 'online', //статус вашего аккаунта (dnd, idle, invisible, online)
+game: {
         name: 'Cosmoteer', //название вашей игры
         state: 'В игре', //текст на 2 линии
         details: 'Играет за корабль Dest-fall', //текст на 1 линии
+   type: 'PLAYING', //новое. Не обязательно. От Qadik а. Типы: 'PLAYING' - играет, 'STREAMING' - стримит, 'LISTENING' - слушает и 'WATCHING' - смотрит.
         application_id: '442351930929577995', //приложение в котором содержатся все ассесты
         spectateSecret: 'look', //секрет для наблюдения
 assets: { 
@@ -18,7 +20,7 @@ assets: {
           large_text: 'Cosmoteer.' //текст который будет виден при наведение на большой ассест
         },
         timestamps: { //метки времени
-          start: Date.now() // устанавливает дату запуска как метку для timestamp (тоесть время начнется с [прошло 00:00])
+          start: Date.now() // устанавливает дату запуска как метку для timestamp (то есть время начнется с [прошло 00:00])
         }, // поменяйте на end и замените Date.now() если хотите произвольную дату, указывать нужно в unix => https://www.unixtimestamp.com/
         party: {
         id: 'ae488379-351d-4a4f-ad32-2b9b01c91657', // ид пати
@@ -30,11 +32,11 @@ assets: {
         spectate: 'look' // секрет наблюдения
         }
       }
-    });
-    console.log("Успех, статус установлен");
+});
+console.log("Успешно! Создатели: Группа XeVal Project");
 });
 if(token) {
-  client.login(token).catch(e=> console.log(e))
-  } else {
-  client.login(process.env.TOKEN)
-  }
+client.login(token).catch(e=> console.log(e))
+} else {
+client.login(process.env.TOKEN)
+}
