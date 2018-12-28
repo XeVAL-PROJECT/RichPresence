@@ -1,7 +1,8 @@
 //Версия 0.2.1
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = ""; //введите ваш токен
+
+let token = "" //вставьте токен сюда.
 
 client.on('ready', () => {
   console.log("Ожидание установки статуса...");
