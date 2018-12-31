@@ -48,7 +48,7 @@ assets: {
         }
       }
 });
-console.log("Успешно! Создатели: Группа XeVal Project");
+console.log("Успешно! Создатели: Группа XeVAL PROJECT");
 });
 if(token) {
 client.login(token).catch(e=> console.log(e))
