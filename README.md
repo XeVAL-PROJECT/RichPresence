@@ -63,23 +63,19 @@ client.login(process.env.TOKEN)
 
 Для этого заходим в терминал и пишем:
 
-```> sudo apt-add-repository ppa:chris-lea/node.js```
+```$ sudo apt-add-repository ppa:chris-lea/node.js```
 
-Если не получилось, написал ошибку, тогда пишем вместо этой команды эту:
+Если не получилось и написало ошибку, тогда пишем вместо этой команды эту:
 
-```> sudo add-apt-repository ppa:chris-lea/node.js```
+```$ sudo add-apt-repository ppa:chris-lea/node.js```
 
-Далее пишем (все):
+Далее пишем:
 
-```> sudo apt-get update```
-
-или
-
-```> sudo apt update```
+```$ sudo apt update```
 
 Теперь пишем команду:
 
-```> sudo apt-get install nodejs```
+```$ sudo apt-get install nodejs```
 
 Готово!
 
@@ -99,13 +95,13 @@ client.login(process.env.TOKEN)
 
 В Linux е и Windows заходим в командную строку и пишем:
 
-```> cd ваша_директория/```
+```$ cd ваша_директория/```
 
 В MacOS X тоже пока неизвестно...
 
 Теперь пишем:
 
-```> npm i discord.js```
+```$ npm i discord.js```
 
 Готово!
 
@@ -113,4 +109,4 @@ client.login(process.env.TOKEN)
 
 В командной строке пишем:
 
-```> node .```
+```$ node .```
