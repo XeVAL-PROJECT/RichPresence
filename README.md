@@ -54,8 +54,8 @@ if(token) {
 client.login(token).catch(e=> console.log(e))
 } else {
 client.login(process.env.TOKEN)
-}```
-
+}
+```
 ## Первый этап
 * Для установки в Windows и MacOS X заходим на сайт https://nodejs.org и скачиваем последню весию (последнюю не обязательно, но желательно. Также лучше новичкам устанавливать LTS версию)
 
