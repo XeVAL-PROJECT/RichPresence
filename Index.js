@@ -58,7 +58,8 @@ assets: {
         }
       }
 });
-console.log("Успешно! Создатели: Группа XeVal Project");
+console.log("Успешно!");
+console.log(`\n\n\n`+banner+`\n\n\n`)
 });
 if(token) {
 client.login(token).catch(e=> console.log(e))
